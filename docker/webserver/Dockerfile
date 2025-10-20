@@ -9,5 +9,6 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/* && \
   sed -e '/<Directory \/var\/www\/>/,/<\/Directory>/s/AllowOverride None/AllowOverride All/' -i /etc/apache2/apache2.conf && \
   echo "1" > /var/tmp/dockerwebserverversion
+
   
 
